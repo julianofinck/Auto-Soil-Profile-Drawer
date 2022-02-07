@@ -23,9 +23,10 @@
 	3. Make sure you have a python.exe set as an environmental variable in PATH
 ----------------------------------------------------------------------------------------------------------
 ###### INSTRUCTIONS:
- Create a folder in past_projects and copy "1_title_block.csv" and "2_borehole_data.csv" to it.
- Fill both csv. Copy them to the root "Auto-Soil-Profile-Drawer\", overwriting the existent ones.
- Run "run.bat"
+.Create a folder in past_projects and copy "1_title_block.csv" and "2_borehole_data.csv" to it.
+.Fill both csv. Copy them to the root "Auto-Soil-Profile-Drawer\", overwriting the existent ones.
+
+.Run "run.bat"
  If any error occurs, check both csv
  Start a new drawing from "" teamplate on AutoCAD, use "script" command, select .scr
  Double-check for minor adjustments, like the figure number in each title.
@@ -37,6 +38,7 @@
 ----------------------------------------------------------------------------------------------------------
 ###### Files and folders explanation:
 > Files
+
 **1_title_block.csv**
 Generic information of the client and project
 **2_borehole_data.csv**
@@ -51,7 +53,8 @@ License in GitHub
 **README.md**
 This readme
 -------------------------------------
-> Folders 
+> Folders
+
 **past_projects**
 directory to keep data from past projects
 **teamplate**
