@@ -7,7 +7,7 @@
 > I learned how to automatise drawings on AutoCAD and that by running a ".py" from a ".bat" allows me to read any eventual error straight on screen. I developed this tool still in my first month of work and received a big compliment from my boss at the time.
 ---
 ### First time using this tool?
-1. "Let AutoCAD know where are the Hatches and the CTB (Color Dependent Plot Style)"
+1. "Let AutoCAD know where are the Hatches and the CTB (Color Dependent Plot Style)"\
 	On AutoCAD, type "_OPTIONS", go to "Files"
 	     Under "Support File Search Path",
 	             add a new path to where the HATCES files are stored. (Padrao\HATCHES)
