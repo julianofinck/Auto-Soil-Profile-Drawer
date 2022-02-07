@@ -49,7 +49,7 @@ This readme
 ###### Folders
 - past_projects\\ \
 directory to keep data from past projects
-- teamplate\\
+- teamplate\\\
 directory where .py and teamplate are stored
  directory where .py and teamplate are stored
   directory where .py and teamplate are stored
