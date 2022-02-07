@@ -1,8 +1,8 @@
 # Auto-Soil-Profile-Drawer
-> Why?
+## Why?
 Drawing borehole profiles on AutoCAD was too time-consuming in the company. 
 
-> How was the problem solved?
+## How was the problem solved?
 AutoCAD's command "script" allowed some time-optimization (2-3 days of work could be reduced to some minutes).
 Now coworkers fill "1_title_block.csv" with client and project information and "2_borehole_data.csv" with the
 field data, run "run.bat", which calls interpret.py. 
@@ -10,7 +10,7 @@ Python interprets the data, translates it into the syntax of AutoCAD and saves i
 On AutoCAD, one must select the "No Template-Metrics" and click on "Start Drawing", use the "script" command,
 and navigate to "4_script_borehole_acad.scr". The borehole profiles will be drawn.
 
-> What did you learn?
+## What did you learn?
 I learned how to automatise drawings on AutoCAD and that by running a ".py" from a ".bat" allows me to read 
 any eventual error straight on screen. I developed this tool still in my first month of work and received a 
 big compliment from my boss at the time.
@@ -30,7 +30,7 @@ On Control panel > Region > Additional settings... > list separator -> ;
 
 3. Make sure you have a python.exe set as an environmental variable in PATH
 ----------------------------------------------------------------------------------------------------------
-INSTRUCTIONS:
+## INSTRUCTIONS:
  Create a folder in past_projects and copy "1_title_block.csv" and "2_borehole_data.csv" to it.
  Fill both csv. Copy them to the root "Auto-Soil-Profile-Drawer\", overwriting the existent ones.
  Run "run.bat"
@@ -43,8 +43,7 @@ INSTRUCTIONS:
 	obs² Topo liso acima do solo é digitado com valor negativo.
 
 ----------------------------------------------------------------------------------------------------------
-# What is each file?
-
+## What is each file?
 DADOS ANTIGOS
  Cada novo projeto tem sua pasta. Dentro de cada pasta há um "DADOS.csv" e um "INFO_GERAIS.txt"
 
