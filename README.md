@@ -1,5 +1,5 @@
 # Auto-Soil-Profile-Drawer
-###### Why?
+##### Why?
 > Drawing borehole profiles on AutoCAD was too time-consuming in the company. 
 
 ###### How was the problem solved?
@@ -7,7 +7,7 @@
 
 ###### What did you learn?
 > I learned how to automatise drawings on AutoCAD and that by running a ".py" from a ".bat" allows me to read any eventual error straight on screen. I developed this tool still in my first month of work and received a big compliment from my boss at the time.
-----------------------------------------------------------------------------------------------------------
+----
 ##### First time using this tool?
 ###### 1. "Let AutoCAD know where are the Hatches and the CTB (Color Dependent Plot Style)"
 	On AutoCAD, type "_OPTIONS", go to "Files"
@@ -21,23 +21,22 @@
 	On Control panel > Region > Additional settings... > list separator -> ;
 	
 	3. Make sure you have a python.exe set as an environmental variable in PATH
-----------------------------------------------------------------------------------------------------------
+----
 ##### INSTRUCTIONS:
 1. Create a folder in past_projects and copy "1_title_block.csv" and "2_borehole_data.csv" to it.
 2. Fill both csv. Copy them to the root "Auto-Soil-Profile-Drawer\", overwriting the existent ones.
 3. Run "run.bat" (if any error occurs, check both csv)
 4. Start a new drawing from "" teamplate on AutoCAD, use "script" command, select .scr
 5. Double-check for minor adjustments, like the figure number in each title.
-6. Use publish to export all figures as one .pdf
-###### DONE!
-
+6. Use publish to export all figures in a single .pdf
 	obs¹ Ao preencher, atente ao ponto como separador decimal, vírgula como divisor de elementos, e eventuais colchetes.
 	obs² Topo liso acima do solo é digitado com valor negativo.
 
-----------------------------------------------------------------------------------------------------------
-##### Files and folders explanation:
+----
+##### Explanation for files and folders:
 ###### Files:
-- 1_title_block.csv	Generic information of the client and project
+- 1_title_block.csv
+    Generic information of the client and project
 - 2_borehole_data.csv	Field data of the boreholes
 - 3_run.bat		Used to run python
 - 4_script_borehole_acad.scr	File to be read in AutoCAD via "script" command.
@@ -47,7 +46,9 @@ License in GitHub
 **README.md**
 This readme
 -------------------------------------
-> Folders
-- past_projects		directory to keep data from past projects
-- teamplate		directory where .py and teamplate are stored
+###### Folders
+- past_projects\
+    directory to keep data from past projects
+- teamplate\
+    directory where .py and teamplate are stored
 
