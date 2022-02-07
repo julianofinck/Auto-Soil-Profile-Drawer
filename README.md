@@ -8,7 +8,8 @@
 ---
 #### First time using this tool?
 1. "Let AutoCAD know where are the Hatches and the CTB (Color Dependent Plot Style)"\
-```On AutoCAD, type "_OPTIONS", go to "Files"
+```
+On AutoCAD, type "_OPTIONS", go to "Files"
     Under "Support File Search Path",
         add a new path to where the HATCES files are stored. (Padrao\HATCHES)
     Under "Printer Support File Path > Plot Style Table Search Path",\
