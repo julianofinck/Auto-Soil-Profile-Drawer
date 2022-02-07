@@ -23,24 +23,30 @@
 	3. Make sure you have a python.exe set as an environmental variable in PATH
 ----------------------------------------------------------------------------------------------------------
 ###### INSTRUCTIONS:
-.Create a folder in past_projects and copy "1_title_block.csv" and "2_borehole_data.csv" to it.
-.Fill both csv. Copy them to the root "Auto-Soil-Profile-Drawer\", overwriting the existent ones.
+Create a folder in past_projects and copy "1_title_block.csv" and "2_borehole_data.csv" to it.
 
-.Run "run.bat"
- If any error occurs, check both csv
- Start a new drawing from "" teamplate on AutoCAD, use "script" command, select .scr
- Double-check for minor adjustments, like the figure number in each title.
- Use publish to export all figures as one .pdf
- DONE!
+Fill both csv. Copy them to the root "Auto-Soil-Profile-Drawer\", overwriting the existent ones.
+
+Run "run.bat" (if any error occurs, check both csv)
+
+Start a new drawing from "" teamplate on AutoCAD, use "script" command, select .scr
+
+Double-check for minor adjustments, like the figure number in each title.
+
+Use publish to export all figures as one .pdf
+
+DONE!
+
 	obs¹ Ao preencher, atente ao ponto como separador decimal, vírgula como divisor de elementos, e eventuais colchetes.
 	obs² Topo liso acima do solo é digitado com valor negativo.
 
 ----------------------------------------------------------------------------------------------------------
 ###### Files and folders explanation:
-> Files
+**Files:**
 
-**1_title_block.csv**
+__1_title_block.csv__
 Generic information of the client and project
+
 **2_borehole_data.csv**
 Field data of the boreholes
 **3_run.bat**
