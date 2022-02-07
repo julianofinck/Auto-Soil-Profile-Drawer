@@ -16,9 +16,13 @@ On AutoCAD, type "_OPTIONS", go to "Files"
         add a new path to where the CTB file is stored.   (fica em PADRAO\PENA)\
 ```
 2. Set your OS' list separator to ";"\
-```On Control panel > Region > Additional settings... > list separator -> ;```
+```
+On Control panel > Region > Additional settings... > list separator -> ;
+```
 3. Make sure you have a python.exe set as an environmental variable in PATH\
-``` preencher ```
+```
+preencher
+```
 ---
 #### INSTRUCTIONS:
 1. Create a folder in past_projects and copy "1_title_block.csv" and "2_borehole_data.csv" to it.
