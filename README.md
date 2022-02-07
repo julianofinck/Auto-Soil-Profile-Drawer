@@ -8,13 +8,11 @@
 ---
 #### First time using this tool?
 1. "Let AutoCAD know where are the Hatches and the CTB (Color Dependent Plot Style)"\
-```
-On AutoCAD, type "_OPTIONS", go to "Files"
+```On AutoCAD, type "_OPTIONS", go to "Files"
     Under "Support File Search Path",
         add a new path to where the HATCES files are stored. (Padrao\HATCHES)
     Under "Printer Support File Path > Plot Style Table Search Path",\
-        add a new path to where the CTB file is stored.   (fica em PADRAO\PENA)\	
-```
+        add a new path to where the CTB file is stored.   (fica em PADRAO\PENA)\```
 2. Set your OS' list separator to ";"
 ```On Control panel > Region > Additional settings... > list separator -> ;```
 3. Make sure you have a python.exe set as an environmental variable in PATH
@@ -34,20 +32,20 @@ On AutoCAD, type "_OPTIONS", go to "Files"
 #### Explanation to files and folders:
 ##### Files:
 - **1_title_block.csv**\
-_Generic information of the client and project_
-- 2_borehole_data.csv\
+_Generic information (client and project)_
+- **2_borehole_data.csv**\
 _Field data of the boreholes_
-- 3_run.bat\
-Used to run python
-- 4_script_borehole_acad.scr\
-File to be read in AutoCAD via "script" command.\
-(several lines of telling what AutoCAD must draw)
-- LICENSE\
-License in GitHub
-- README.md\
-This readme
+- **3_run.bat**\
+_Used to run python_
+- **4_script_borehole_acad.scr**\
+_File to be read in AutoCAD via "script" command._\
+_(several lines of telling what AutoCAD must draw)_
+- **LICENSE**\
+_License in GitHub_
+- **README.md**\
+_This readme_
 ##### Folders
-- past_projects\\\
-directory to keep data from past projects
-- teamplate\\\
-directory where .py and teamplate are stored
+- **past_projects\\**\
+_directory to keep data from past projects_
+- **teamplate\\**\
+_directory where .py and teamplate are stored_
