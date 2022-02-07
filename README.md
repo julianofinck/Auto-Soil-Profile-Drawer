@@ -34,8 +34,8 @@ Move this path to the top of the list
 4. Start a new drawing with "No Template-Metric" teamplate on AutoCAD, use "script" command, select "4_script_borehole_acad.scr"
 5. Double-check for minor adjustments, like the figure number in each title.
 6. Use publish to export all figures in a single .pdf
-- obs¹ Ao preencher, atente ao ponto como separador decimal, vírgula como divisor de elementos, e eventuais colchetes.
-- obs² Topo liso acima do solo é digitado com valor negativo.
+- ¹When filling both csv, mind the formatting: point as decimal sepator, comma as elements separator, semicolon as list separator, and brackets to certain variables
+- ²Topo liso above ground must be written negative.
 
 ---
 #### EXPLANATION TO FILES AND FOLDERS:
