@@ -90,10 +90,6 @@ perfil.scr
  (Em suma, diversas linhas de comandos para o AutoCAD desenhar nossos perfis)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
-# coisas a serem feitas
-Varrer a descricao do perfil, quantos caracteres por linha? Quebrar automaticamente
-
-------------------------------------------------------------------------------------------------------------------------------------------------
 control panel (view by> category)
 change the date, time or number formats
 additional settings
