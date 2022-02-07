@@ -1,4 +1,4 @@
-# Auto-Soil-Profile-Drawer
+## Auto-Soil-Profile-Drawer
 #### Why?
 > Drawing borehole profiles on AutoCAD was too time-consuming in the company. 
 #### How was the problem solved?
@@ -6,14 +6,14 @@
 #### What did you learn?
 > I learned how to automatise drawings on AutoCAD and that by running a ".py" from a ".bat" allows me to read any eventual error straight on screen. I developed this tool still in my first month of work and received a big compliment from my boss at the time.
 ---
-#### First time using this tool?
+#### FIRST TIME USING IT?
 1. "Let AutoCAD know where are the Hatches and the CTB (Color Dependent Plot Style)"\
 ```
 On AutoCAD, type "_OPTIONS", go to "Files"
     Under "Support File Search Path",
         add a new path to where the HATCES files are stored. (Padrao\HATCHES)
-    Under "Printer Support File Path > Plot Style Table Search Path",\
-        add a new path to where the CTB file is stored.   (fica em PADRAO\PENA)\
+    Under "Printer Support File Path > Plot Style Table Search Path",
+        add a new path to where the CTB file is stored.   (fica em PADRAO\PENA)
 ```
 2. Set your OS' list separator to ";"\
 ```
@@ -35,7 +35,7 @@ preencher
 - obs² Topo liso acima do solo é digitado com valor negativo.
 
 ---
-#### Explanation to files and folders:
+#### EXPLANATION TO FILES AND FOLDERS:
 ##### Files:
 - **1_title_block.csv**\
 _Generic information (client and project)_
