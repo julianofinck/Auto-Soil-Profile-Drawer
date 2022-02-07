@@ -42,7 +42,7 @@ INSTRUCTIONS:
 	obs² Topo liso acima do solo é digitado com valor negativo.
 
 ----------------------------------------------------------------------------------------------------------
-O QUE É CADA ARQUIVO??
+# What is each file?
 
 DADOS ANTIGOS
  Cada novo projeto tem sua pasta. Dentro de cada pasta há um "DADOS.csv" e um "INFO_GERAIS.txt"
