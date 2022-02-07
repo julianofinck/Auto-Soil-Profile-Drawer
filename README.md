@@ -28,7 +28,7 @@ preencher
 1. Create a folder in past_projects and copy "1_title_block.csv" and "2_borehole_data.csv" to it.
 2. Fill both csv. Copy them to the root "Auto-Soil-Profile-Drawer\", overwriting the existent ones.
 3. Run "run.bat" (if any error occurs, check both csv)
-4. Start a new drawing from "" teamplate on AutoCAD, use "script" command, select .scr
+4. Start a new drawing with "No Template-Metric" teamplate on AutoCAD, use "script" command, select "4_script_borehole_acad.scr"
 5. Double-check for minor adjustments, like the figure number in each title.
 6. Use publish to export all figures in a single .pdf
 - obs¹ Ao preencher, atente ao ponto como separador decimal, vírgula como divisor de elementos, e eventuais colchetes.
@@ -44,8 +44,7 @@ _Field data of the boreholes_
 - **3_run.bat**\
 _Used to run python_
 - **4_script_borehole_acad.scr**\
-_File to be read in AutoCAD via "script" command._\
-_(several lines of telling what AutoCAD must draw)_
+_File to be read in AutoCAD via "script" command.(several lines of telling what AutoCAD must draw)_
 - **LICENSE**\
 _License in GitHub_
 - **README.md**\
