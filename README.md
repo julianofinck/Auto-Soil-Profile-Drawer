@@ -1,58 +1,43 @@
-# Auto-Desenhar-Perfil
-
+# Auto-Soil-Profile-Drawer
 > Why?
-It used to take a long time to prepare figures from boreholes on AutoCAD in the company. Once I
-learned from the command "script" on AutoCAD, I realised I could bring much to the company.
+Drawing borehole profiles on AutoCAD was too time-consuming in the company. 
 
 > How was the problem solved?
-This tool reduced a work of 2-3 days to some minutes. Since then, instead of drawing on AutoCAD,
-coworkers can fill a default "borehole_data.csv" with the field data and run "run.bat", which
-then calls "Padrao\interpret.py". "interpret.py" translates what it finds in "borehole_data.csv"
-to AutoCAD syntax, creating "perfil.scr". On AutoCAD, one must select the "No Template-Metrics" and
-click on "Start Drawing", type scr, hit enter and navigate to "perfil.scr".
+AutoCAD's command "script" allowed some time-optimization (2-3 days of work could be reduced to some minutes).
+Now coworkers fill "1_title_block.csv" with client and project information and "2_borehole_data.csv" with the
+field data, run "run.bat", which calls interpret.py. 
+Python interprets the data, translates it into the syntax of AutoCAD and saves in "4_script_borehole_acad.scr".
+On AutoCAD, one must select the "No Template-Metrics" and click on "Start Drawing", use the "script" command,
+and navigate to "4_script_borehole_acad.scr". The borehole profiles will be drawn.
 
 > What did you learn?
-Developing this tool, I learned that I can automatise drawings on AutoCAD and that using ".bat" 
-to run a ".py", I can read any error straight on screen. I developed this tool still in my first
-month of work and that made my first stating "Now I am 100% sure I made the right choice choosing you"
+I learned how to automatise drawings on AutoCAD and that by running a ".py" from a ".bat" allows me to read 
+any eventual error straight on screen. I developed this tool still in my first month of work and received a 
+big compliment from my boss at the time.
 ----------------------------------------------------------------------------------------------------------
-FIRST TIME USING THE TOOL: 
-"Let AutoCAD know where are the Hatches and the CTB (Color Dependent Plot Style)"
-
+> First time using this tool?
+1. "Let AutoCAD know where are the Hatches and the CTB (Color Dependent Plot Style)"
 On AutoCAD, type "_OPTIONS", go to "Files"
      Under "Support File Search Path", 
              add a new path to where the HATCES files are stored. (Padrao\HATCHES)
 
      Under "Printer Support File Path > Plot Style Table Search Path",
              add a new path to where the CTB file is stored.   (fica em PADRAO\PENA)
+
+2. Set your OS' list separator to ";"
+On Control panel > Region > Additional settings... > list separator -> ;
+
+3. Make sure you have a python.exe set as an environmental variable in PATH
 ----------------------------------------------------------------------------------------------------------
 INSTRUCTIONS:
-
- PREPARAR DADOS
-(1) Preencha "DADOS.xlsx" (obs¹), salve como .csv (15a opção)
-  * Na ausência do NA estabilizado, usar os do FT-01 de água.
-(2) Preencha "INFO_GERAIS.txt"	(Informação do projeto, do cliente, escala, sist de coordenadas)
-
- PROCESSAMENTO
-(3) Abra "1. Perfil v1.py" com python.exe (clique em Propriedades e navegue até o python.exe na pasta do Python)
-
- CONFERIR ENTRADAS
-(4) Havendo avisos de erros, volte para (1) e revise "DADOS.xlsx".
-
- AUTODESENHAR
-(5) Abra AutoCAD, digite "scr", enter, selecione perfil.scr
-
- AJUSTES FINAIS
-(6) Checar se o desenho está correto, fazer pequenos ajustes e adicionar granulometria
-
- GERAR PDF PARA FIGURAS/IMPRESSÃO
-(7) Ctrl+P em cada Layout, salvar como .pdf (já está configurado pela rotina o tipo de exportação). Combinar em um .pdf único.
-    Alternativamente, digite PUBLISH, remova Model, desmarque "include plot stamp", clique publish (não precisa salvar lista de plotagem)
-
-   *NÃO NECESSÁRIO, mas se quiser visualizar com as cores de impressão, clicar com botão direito em cada aba de Layout, "modificar/modify", marcar "plot with style"
- 
- PRONTO!
-
+ Create a folder in past_projects and copy "1_title_block.csv" and "2_borehole_data.csv" to it.
+ Fill both csv. Copy them to the root "Auto-Soil-Profile-Drawer\", overwriting the existent ones.
+ Run "run.bat"
+ If any error occurs, check both csv
+ Start a new drawing from "" teamplate on AutoCAD, use "script" command, select .scr
+ Double-check for minor adjustments, like the figure number in each title.
+ Use publish to export all figures as one .pdf
+ DONE!
 	obs¹ Ao preencher, atente ao ponto como separador decimal, vírgula como divisor de elementos, e eventuais colchetes.
 	obs² Topo liso acima do solo é digitado com valor negativo.
 
@@ -88,9 +73,3 @@ perfil.py
 perfil.scr
  Produto de saída do processamento que será aberto no AutoCAD via comando SCRIPT.
  (Em suma, diversas linhas de comandos para o AutoCAD desenhar nossos perfis)
-
-------------------------------------------------------------------------------------------------------------------------------------------------
-control panel (view by> category)
-change the date, time or number formats
-additional settings
-list separator -> ;
