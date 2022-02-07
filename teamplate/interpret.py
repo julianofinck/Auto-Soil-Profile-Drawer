@@ -1,54 +1,27 @@
 """
-Update 3rd Feb 2022
+Purpose:  optimize the drawing of figures of boreholes
+  Author: J S F
+  E-Mail: @gmail.com
+  Date: 11.03.2021 [Update 3rd Feb 2022]
 
-OBJETIVO:  Automatizar a elaboração das figuras de poços de monitoramento
-  Autoria: Juliano Santos Finck
-  E-Mail: juliano.finck@gmail.com
-  Data: 11/03/2021
+Summary:
+  1. Import libraries
+  2. Functions
+  3. Read files
+  4. Open output .scr file
+    4.1 Create layers and blocks
+    4.2 Shallow and normal depth boreholes
+  5. Final message
 
-RESUMO:
-  1. IMPORTAR BIBLIOTECAS
-  2. FUNÇÕES
-     2.1 AutoCAD
-     2.2 Funções "muleta" para esse .py
-  3. LER AS INFOS
-     3.1 CRIAR VARIÁVEIS DE CAMINHO
-     3.2 INFO GERAIS
-     3.3 LER DADOS.CSV
 
-  4. PROCESSAMENTO
-     4.1 DEDUZIR DO DADOS.CSV
-     4.2 ABRIR perfil.scr PARA OUTPUT
-     4.3 CRIAR LAYERS
-        4.3.1 CORES GERAIS
-        4.3.2 CORES DE SOLO
-        4.3.3 CORES DE HORIZONTE
-     4.4 BLOCOS
-     4.5A PERFIS NORMAIS
-     4.5B PERFIS RASOS# Sobre a sintaxe do AutoCAD:
 #  espaço é um enter menos poderoso; o enter sempre "finaliza" a entrada.
 #  _ antes de um comando -> utilizar comando em Inglês
 #  - antes de um comando -> versão em linha do comando (sem caixa de diálogo)
-#
-# Sobre a rotina 'perfil.py':
-#  CSV -> a partir de um xlsx salvar como 'CSV (Comma delimited) (*,csv)'
-#         Há diferentes tipos de CSV. O que usei é 15a opção do 'Salvar como' no 'Microsoft Excel 2010'
-# Para debuggar o código, eu adiciono "print('aqui!!')" e vou vendo até onde o código está sendo executado
-#
-#
 # Para adicionar novas cores, atualizar no "interpretar_cor" e adicionar o "new_layer"
 # Para adicionar novas granulometrias, criar nova hachura em PADRAO/HATCHES e adicionar em "interpretar_granulometria"
-  5. DELETAR LAYOUTS PADRÕES DO AUTOCAD
-  6. FECHAR O .SCR
-  7. MENSAGEM FINAL
- Cx_conc	Cam_calc	Pesc_comp
-
-# =================================================================================== #
-# OBSERVAÇÕES:
-Na ausência do NA estabilizado, usar os do FT-01 de água.
 """
 
-# Import libraries
+# 1. Import libraries ===================================================================
 from import_libs import install_if_nonexistent
 from func_print import final_message, division, section  # printing functions
 from func_acad import hatch, line, polyline, rectangle, circle, \
@@ -61,12 +34,12 @@ import pandas as pd
 import numpy as np
 
 install_if_nonexistent('colorama')
-from colorama import Fore, Back, Style
+from colorama import Fore, Style
 
 os.system('cls')
 
 
-# Functions =====================================================================
+# 2. Functions ==========================================================================
 def read_files(title_block, borehole_data, output_scr_acad, logo_png):
     abs_path = os.path.abspath(os.getcwd()) + r'\a'.replace('a', '')
     title_block = abs_path + title_block
@@ -120,7 +93,6 @@ def read_files(title_block, borehole_data, output_scr_acad, logo_png):
     return cliente, projeto, data, escala, sist_geo, CSV, logo_png, output_scr_acad
 
 
-# 40
 def create_layers(file):
     # Generic colors
     new_style(file, '"Trebuchet MS"', '.0621', '1')
@@ -166,7 +138,6 @@ def create_layers(file):
     new_layer(file, u'"SC_VERMELHO_ESCURO"', 'C T', '252,14,3', 'Continuous', 'default', u'Cor do solo')
 
 
-# 20
 def create_blocks(file):
     zoom(file, -2, -2, 2, 2)
     L = u'"SÍMBOLO_NÍVEL ÁGUA"'
@@ -195,7 +166,6 @@ def create_blocks(file):
     new_block(file, 'CA', 0.1071, 0, 1, 1, -1, -1)
 
 
-# 30
 def validate(CSV, n_p):
     if np.isnan(CSV['Topo_liso'][n_p]) and np.isnan(CSV['C_liso'][n_p]) and np.isnan(CSV['C_sec_filtr'][n_p]):
         existe_poco = 0
@@ -220,7 +190,6 @@ def validate(CSV, n_p):
     return existe_poco
 
 
-# 200
 def cabecalho(file, CSV, n_p, existe_poco, i_layout, x, y, prof, VOC_dist, sist_geo):
     VOC = CSV['VOC'][n_p]
     ID_sonda = CSV['ID_sonda'][n_p]
@@ -411,7 +380,6 @@ def cabecalho(file, CSV, n_p, existe_poco, i_layout, x, y, prof, VOC_dist, sist_
         pass
 
 
-# 250
 def perfil_pedologico(file, n_p, x, y, D, Pedologia, prof, existe_poco):
     def solo(file, x, y, y1, y2, Diam_poco, string, existe_poco):
         """Para cada horizonte do solo, desenhar dois retângulos (esquerda e direita) ao redor do poço,
@@ -684,7 +652,6 @@ def perfil_pedologico(file, n_p, x, y, D, Pedologia, prof, existe_poco):
         raise SyntaxError(MSG)
 
 
-# 300
 def adicionar_poco(file, CSV, n_p, prof, x, y, existe_poco):
     D = CSV['Diam_poco'][n_p]
     B_i = CSV['Bentonita_i'][n_p]
@@ -994,7 +961,6 @@ def adicionar_poco(file, CSV, n_p, prof, x, y, existe_poco):
             hatch(file, x + 1.65 + .14, prof - .15 + y, '1_ACABAMENTO', P='S')
 
 
-# 20
 def boreholes_per_layout(stacks_of, CSV, normal, i_normal):
     try:  # There might not be subsequent boreholes
         existem_pocos, layout, titulo = [0, '"', '']
@@ -1013,7 +979,6 @@ def boreholes_per_layout(stacks_of, CSV, normal, i_normal):
     return existem_pocos, layout, titulo
 
 
-# 300
 def fazer_layout(file, layout, titulo, existem_pocos, CTB, sist_geo, logo_png):
     # 240
     def perfil_esquematico_poco(file):
@@ -1330,8 +1295,7 @@ def final_adjusts_and_finish(file):
     file.close()
 
 
-# =================================================================
-# Read files
+# 3. Read files =========================================================================
 title_block = '1_title_block.csv'
 borehole_data = '2_borehole_data.csv'
 output_scr_acad = '4_script_borehole_acad.scr'
@@ -1347,16 +1311,16 @@ else:
     VOC_dist = float(VOC_dist)
 print('', VOC_dist)
 
-# Open output file
+# 4. Open output file
 file = codecs.open(output_scr_acad, 'wb', encoding='mbcs')
 file.write('OSMODE 0\n')
 file.write('SHADEMODE 2\n')
 
-# Create layers and blocks
+# 4.1 Create layers and blocks
 create_layers(file)
 create_blocks(file)
 
-# Shallow and normal depth boreholes
+# 4.2 Shallow and normal depth boreholes
 shallow, normal = [[], []]
 for n_p in range(len(CSV)):
     if CSV['Prof'][n_p] < 2:
@@ -1442,7 +1406,7 @@ prof_max = round(max(profs_list), 1)
 zoom(file, -1, -1, x + 6, y + prof_max + 2)
 final_adjusts_and_finish(file)
 
-# Final message
+# 4.3 Final message
 a = output_scr_acad
 a = a[::-1][:a[::-1].index('\\')][::-1]
 

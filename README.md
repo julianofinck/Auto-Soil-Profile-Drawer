@@ -7,7 +7,7 @@
 > I learned how to automatise drawings on AutoCAD and that by running a ".py" from a ".bat" allows me to read any eventual error straight on screen. I developed this tool still in my first month of work and received a big compliment from my boss at the time.
 ---
 #### FIRST TIME USING IT?
-1. "Let AutoCAD know where are the Hatches and the CTB (Color Dependent Plot Style)"\
+1. "Let AutoCAD know where are the Hatches and the CTB (Color Dependent Plot Style)"
 ```
 On AutoCAD, type "_OPTIONS", go to "Files"
     Under "Support File Search Path",
@@ -15,11 +15,11 @@ On AutoCAD, type "_OPTIONS", go to "Files"
     Under "Printer Support File Path > Plot Style Table Search Path",
         add a new path to where the ctb file is stored.   (teamplate\ctb)
 ```
-2. Set your OS' list separator to ";"\
+2. Set your OS' list separator to ";"
 ```
 Control panel > Region > Additional settings... > list separator -> ;
 ```
-3. Make sure you have a python.exe set as an environmental variable in PATH\
+3. Make sure you have a python.exe set as an environmental variable in PATH
 ```
 Control panel > System > Advanced system settings > Environment Variables
 Under "User variables", select "Path" > Edit > New > 
