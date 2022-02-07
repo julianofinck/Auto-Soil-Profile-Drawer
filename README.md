@@ -47,7 +47,7 @@ License in GitHub
 This readme
 -------------------------------------
 ###### Folders
-- past_projects\\
+- past_projects\\ \
 directory to keep data from past projects
 - teamplate\\
 directory where .py and teamplate are stored
