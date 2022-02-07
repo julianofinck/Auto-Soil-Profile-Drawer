@@ -32,27 +32,18 @@
 	obs¹ Ao preencher, atente ao ponto como separador decimal, vírgula como divisor de elementos, e eventuais colchetes.
 	obs² Topo liso acima do solo é digitado com valor negativo.
 
-----
+--
 ##### Explanation for files and folders:
 ###### Files:
-- 1_title_block.csv
-    Generic information of the client and project
-- 2_borehole_data.csv	Field data of the boreholes
-- 3_run.bat		Used to run python
-- 4_script_borehole_acad.scr	File to be read in AutoCAD via "script" command.
+- 1_title_block.csv\Generic information of the client and project
+- 2_borehole_data.csv\Field data of the boreholes
+- 3_run.bat\Used to run python
+- 4_script_borehole_acad.scr\File to be read in AutoCAD via "script" command.
 (several lines of telling what AutoCAD must draw)
-**LICENSE**
-License in GitHub
-**README.md**
-This readme
--------------------------------------
+- LICENSE\License in GitHub
+- README.md\This readme
 ###### Folders
-- past_projects\\ \
+- past_projects\\\
 directory to keep data from past projects
 - teamplate\\\
 directory where .py and teamplate are stored
- directory where .py and teamplate are stored
-  directory where .py and teamplate are stored
-   directory where .py and teamplate are stored
-    directory where .py and teamplate are stored
-
