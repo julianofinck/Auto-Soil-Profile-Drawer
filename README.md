@@ -3,7 +3,7 @@
 > Drawing borehole profiles on AutoCAD was too time-consuming in the company. 
 ##### How was the problem solved?
 > AutoCAD's command "script" allowed some time-optimization (2-3 days of work could be reduced to some minutes). Coworkers now fill "1_title_block.csv" with client and project information and "2_borehole_data.csv" with the field data, run "run.bat", which calls interpret.py. Python interprets the data, translates it into the syntax of AutoCAD and saves in "4_script_borehole_acad.scr". On AutoCAD, one must select the "No Template-Metrics" and click on "Start Drawing", use the "script" command, and navigate to "4_script_borehole_acad.scr". The borehole profiles will be drawn.
-##### What did you learn?/
+##### What did you learn?\
 I learned how to automatise drawings on AutoCAD and that by running a ".py" from a ".bat" allows me to read any eventual error straight on screen. I developed this tool still in my first month of work and received a big compliment from my boss at the time.
 ---
 ### First time using this tool?
