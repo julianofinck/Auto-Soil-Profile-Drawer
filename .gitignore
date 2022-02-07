@@ -1,3 +1,5 @@
 .idea/
 teamplate/__pycache__/
 *.pyc
+.gitignore
+.gitattributes
