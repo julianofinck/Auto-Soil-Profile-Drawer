@@ -15,9 +15,9 @@ On AutoCAD, type "_OPTIONS", go to "Files"
     Under "Printer Support File Path > Plot Style Table Search Path",\
         add a new path to where the CTB file is stored.   (fica em PADRAO\PENA)\
 ```
-2. Set your OS' list separator to ";"
+2. Set your OS' list separator to ";"\
 ```On Control panel > Region > Additional settings... > list separator -> ;```
-3. Make sure you have a python.exe set as an environmental variable in PATH
+3. Make sure you have a python.exe set as an environmental variable in PATH\
 ``` preencher ```
 ---
 #### INSTRUCTIONS:
