@@ -8,8 +8,8 @@
 ###### What did you learn?
 > I learned how to automatise drawings on AutoCAD and that by running a ".py" from a ".bat" allows me to read any eventual error straight on screen. I developed this tool still in my first month of work and received a big compliment from my boss at the time.
 ----------------------------------------------------------------------------------------------------------
-###### First time using this tool?
-	1. "Let AutoCAD know where are the Hatches and the CTB (Color Dependent Plot Style)"
+##### First time using this tool?
+###### 1. "Let AutoCAD know where are the Hatches and the CTB (Color Dependent Plot Style)"
 	On AutoCAD, type "_OPTIONS", go to "Files"
 	     Under "Support File Search Path", 
 	             add a new path to where the HATCES files are stored. (Padrao\HATCHES)
@@ -24,11 +24,8 @@
 ----------------------------------------------------------------------------------------------------------
 ###### INSTRUCTIONS:
 Create a folder in past_projects and copy "1_title_block.csv" and "2_borehole_data.csv" to it.
-
 Fill both csv. Copy them to the root "Auto-Soil-Profile-Drawer\", overwriting the existent ones.
-
 Run "run.bat" (if any error occurs, check both csv)
-
 Start a new drawing from "" teamplate on AutoCAD, use "script" command, select .scr
 
 Double-check for minor adjustments, like the figure number in each title.
@@ -41,9 +38,8 @@ DONE!
 	obs² Topo liso acima do solo é digitado com valor negativo.
 
 ----------------------------------------------------------------------------------------------------------
-###### Files and folders explanation:
-**Files:**
-
+##### Files and folders explanation:
+######Files:
 __1_title_block.csv__
 Generic information of the client and project
 
@@ -61,8 +57,8 @@ This readme
 -------------------------------------
 > Folders
 
-**past_projects**
+**past_projects** 
 directory to keep data from past projects
-**teamplate**
+**teamplate** 
 directory where .py and teamplate are stored
 
