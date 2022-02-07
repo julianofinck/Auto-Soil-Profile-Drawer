@@ -33,7 +33,7 @@ On AutoCAD, type "_OPTIONS", go to "Files"
 ---
 #### Explanation to files and folders:
 ##### Files:
-- **1_title_block.csv\**
+- **1_title_block.csv**\
 _Generic information of the client and project_
 - 2_borehole_data.csv\
 _Field data of the boreholes_
