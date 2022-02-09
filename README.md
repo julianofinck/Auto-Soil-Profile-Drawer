@@ -57,5 +57,5 @@ _This readme_
 ##### Folders
 - **past_projects\\**\
 _directory to keep data from past projects_
-- **teamplate\\**\
+- **template\\**\
 _directory where .py and teamplate are stored_
