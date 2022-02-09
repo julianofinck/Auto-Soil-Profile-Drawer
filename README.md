@@ -1,3 +1,5 @@
+### Wondering how is it at work?
+Check on my YouTube -> https://youtu.be/6THJVKVzmAA
 ## Auto-Soil-Profile-Drawer
 #### Why?
 > Drawing borehole profiles on AutoCAD was too time-consuming in the company. 
