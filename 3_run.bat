@@ -1,2 +1,2 @@
-python -B "teamplate\interpret.py"
+python -B "template\interpret.py"
 pause

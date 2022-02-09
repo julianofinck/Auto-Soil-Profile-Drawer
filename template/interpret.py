@@ -1300,7 +1300,7 @@ title_block = '1_title_block.csv'
 borehole_data = '2_borehole_data.csv'
 output_scr_acad = '4_script_borehole_acad.scr'
 ctb = 'company_plotstyle.ctb'  # Set on AutoCAD (option support file path new+browse)
-logo_png = r'teamplate\logo.png'
+logo_png = r'template\logo.png'
 cliente, projeto, data, escala, sist_geo, CSV, logo_png, output_scr_acad = read_files(title_block, borehole_data, output_scr_acad, logo_png)
 
 section(84, '3. VOC measurement spacing:')
