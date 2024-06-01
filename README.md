@@ -4,7 +4,7 @@
 
 ## Description
 
-Automatize the creation of borehole profiles on AutoCAD, reducing the time from days to minutes.
+Automatize the creation of borehole profiles on AutoCAD, reducing the time from days to minutes. This script finds usage in the industry of geotechnical engineering, environmental remediation, and site contamination managing.
 
 Wondering how is it at work? Check on my YouTube -> https://youtu.be/6THJVKVzmAA
 #### Why?
