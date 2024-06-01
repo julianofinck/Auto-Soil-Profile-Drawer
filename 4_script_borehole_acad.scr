@@ -975,7 +975,7 @@ MTEXT 209.1278,17.3045 H 1.2 R 0 L A  J MC 241.1388,19.5444 \pxql;{\H1.2;DATA}
 
 -LAYER S 0_SELO
 
--IMAGE A "C:\Users\Eduardo Santos Finck\Documents\GitHub\Auto-Soil-Profile-Drawer\template\logo.png"
+-IMAGE A "/home/julianofinck/Auto-Soil-Profile-Drawer/template\logo.png"
 239.5104,11.7758
 0.0994
 0
@@ -2389,7 +2389,7 @@ MTEXT 209.1278,17.3045 H 1.2 R 0 L A  J MC 241.1388,19.5444 \pxql;{\H1.2;DATA}
 
 -LAYER S 0_SELO
 
--IMAGE A "C:\Users\Eduardo Santos Finck\Documents\GitHub\Auto-Soil-Profile-Drawer\template\logo.png"
+-IMAGE A "/home/julianofinck/Auto-Soil-Profile-Drawer/template\logo.png"
 239.5104,11.7758
 0.0994
 0
@@ -3747,7 +3747,7 @@ MTEXT 209.1278,17.3045 H 1.2 R 0 L A  J MC 241.1388,19.5444 \pxql;{\H1.2;DATA}
 
 -LAYER S 0_SELO
 
--IMAGE A "C:\Users\Eduardo Santos Finck\Documents\GitHub\Auto-Soil-Profile-Drawer\template\logo.png"
+-IMAGE A "/home/julianofinck/Auto-Soil-Profile-Drawer/template\logo.png"
 239.5104,11.7758
 0.0994
 0
@@ -5127,7 +5127,7 @@ MTEXT 209.1278,17.3045 H 1.2 R 0 L A  J MC 241.1388,19.5444 \pxql;{\H1.2;DATA}
 
 -LAYER S 0_SELO
 
--IMAGE A "C:\Users\Eduardo Santos Finck\Documents\GitHub\Auto-Soil-Profile-Drawer\template\logo.png"
+-IMAGE A "/home/julianofinck/Auto-Soil-Profile-Drawer/template\logo.png"
 239.5104,11.7758
 0.0994
 0
@@ -6507,7 +6507,7 @@ MTEXT 209.1278,17.3045 H 1.2 R 0 L A  J MC 241.1388,19.5444 \pxql;{\H1.2;DATA}
 
 -LAYER S 0_SELO
 
--IMAGE A "C:\Users\Eduardo Santos Finck\Documents\GitHub\Auto-Soil-Profile-Drawer\template\logo.png"
+-IMAGE A "/home/julianofinck/Auto-Soil-Profile-Drawer/template\logo.png"
 239.5104,11.7758
 0.0994
 0
@@ -7882,7 +7882,7 @@ MTEXT 209.1278,17.3045 H 1.2 R 0 L A  J MC 241.1388,19.5444 \pxql;{\H1.2;DATA}
 
 -LAYER S 0_SELO
 
--IMAGE A "C:\Users\Eduardo Santos Finck\Documents\GitHub\Auto-Soil-Profile-Drawer\template\logo.png"
+-IMAGE A "/home/julianofinck/Auto-Soil-Profile-Drawer/template\logo.png"
 239.5104,11.7758
 0.0994
 0
@@ -8616,7 +8616,7 @@ MTEXT 209.1278,17.3045 H 1.2 R 0 L A  J MC 241.1388,19.5444 \pxql;{\H1.2;DATA}
 
 -LAYER S 0_SELO
 
--IMAGE A "C:\Users\Eduardo Santos Finck\Documents\GitHub\Auto-Soil-Profile-Drawer\template\logo.png"
+-IMAGE A "/home/julianofinck/Auto-Soil-Profile-Drawer/template\logo.png"
 239.5104,11.7758
 0.0994
 0
