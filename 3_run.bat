@@ -2,7 +2,7 @@
 set PYTHON="python"
 
 @REM Set the path to the main script
-set SCRIPT="template\translate_csv_2_acad_drawing.py"
+set SCRIPT="template\interpret.py"
 
 @REM Call the Python interpreter on the main script
 %PYTHON% -B %SCRIPT%

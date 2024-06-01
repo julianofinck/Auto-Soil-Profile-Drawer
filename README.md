@@ -1,6 +1,12 @@
-## Auto-Soil-Profile-Drawer
-#### Wondering how is it at work?
-Check on my YouTube -> https://youtu.be/6THJVKVzmAA
+# Auto-Soil-Profile-Drawer
+[![Python 3.7](https://img.shields.io/badge/Python-v3-yellow)](https://www.python.org/)
+![AutoCAD 2020](https://img.shields.io/badge/AutoCAD-2020-red)
+
+## Description
+
+Automatize the creation of borehole profiles on AutoCAD, reducing the time from days to minutes.
+
+Wondering how is it at work? Check on my YouTube -> https://youtu.be/6THJVKVzmAA
 #### Why?
 > Drawing borehole profiles on AutoCAD was too time-consuming in the company. 
 #### How was the problem solved?
